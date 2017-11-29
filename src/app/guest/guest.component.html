@@ -1,0 +1,13 @@
+<mat-toolbar>
+    <span>Dashboard</span>
+    <span class="fill-remaining-space"></span>
+    <button mat-button>Log In!</button>
+</mat-toolbar>
+
+<h1>{{title}}</h1>
+
+<a [routerLink]="['/guest/login']">login</a>
+<a [routerLink]="['/guest/register']">register</a>
+<a [routerLink]="['/guest/forgotten-password']">pass</a>
+
+<router-outlet></router-outlet>
